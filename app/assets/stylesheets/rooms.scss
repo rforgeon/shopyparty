@@ -1,0 +1,62 @@
+// Place all the styles related to the rooms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+a.clear{
+  text-decoration: none;
+  color:inherit;
+}
+
+.centeredRoomDiv {
+  margin:0 auto;
+  overflow:hidden;
+  left:0;
+  right:0;
+  text-align:center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.roomTitle{
+  font-size: 100px;
+  //color: #4f4e4e;
+  color: white;
+
+}
+
+.shareTitle{
+  font-size: 25px;
+  //color: #4f4e4e;
+  color: white;
+}
+.shareHand{
+  font-size: 5vw;
+}
+
+.openRoomBtn{
+  width: 20%;
+  margin-left: 40%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.storeGrid{
+  margin-top: 5vw;
+}
+
+.storesTitle{
+  margin-top: 5vw;
+  font-size: 70px;
+  color: #4f4e4e;
+}
+
+.aboveTheFold{
+  box-shadow: 2px 2px 4px 0 #ccc;
+  padding-bottom: 50px;
+  background-image: url('https://static.pexels.com/photos/54581/escalator-stairs-metal-segments-architecture-54581.jpeg');
+  background-size: 100%;
+  margin-top: -33px;
+}

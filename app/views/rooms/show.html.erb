@@ -1,0 +1,83 @@
+
+<body>
+<p id="notice"><%= notice %></p>
+
+<div style='width:100%;'>
+  <div class='aboveTheFold'>
+    <div class='centeredRoomDiv'>
+      <div class='roomTitle'>
+        <%= @room.slug %>
+      </div>
+      <div class='shareTitle'>
+        share room link
+      </div>
+      <div class='shareHand'>
+        👇
+      </div>
+
+      <input type="text" id="fname" value='http://www.shopyparty/rooms/<%= @room.slug %>'style="width:25%; margin-left: 25px; color: #4f4e4e;">
+      <%= link_to edit_room_path(@room) do %>
+        <i class="fa fa-pencil-square-o" aria-hidden="true" style="font-size:25px; color:white; "></i>
+      <%end%>
+
+
+      <div>
+      </div>
+      <div class='openRoomBtn'>
+        <a class='clear' href='https://appear.in/<%=@room.slug%>' target="_blank">
+        <div style='padding:4px; color:white;'>
+          🤗 Open Room
+          <i class="fa fa-external-link" aria-hidden="true"></i>
+        </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+  <div class='storesTitle centeredRoomDiv'>
+    Stores
+  </div>
+</div>
+
+
+
+<div class='storeGrid'>
+
+  <div class="masonry">
+   <div class="item" >
+    <a class='clear' href='https://www.modcloth.com/' target="_blank">
+     <img class='itemImg' src='https://cldup.com/0EZtW2tF9j.png'>
+    </a>
+   </div>
+   <div class="item">
+    <a class='clear' href='https://www.renttherunway.com/' target="_blank">
+     <img class='itemImg' src='https://cldup.com/88uWrUPFwn.png'>
+    </a>
+   </div>
+   <div class="item">
+    <a class='clear' href='https://www.meundies.com' target="_blank">
+     <img class='itemImg' src='https://cldup.com/Jt-PhqZaHl.png'>
+    </a>
+   </div>
+   <div class="item">
+    <a class='clear' href='https://www.agoda.com/' target="_blank">
+     <img class='itemImg' src='https://cldup.com/q2iYJPoT9N.png'>
+    </a>
+   </div>
+   <div class="item">
+    <a class='clear' href='https://www.viator.com/' target="_blank">
+      <img class='itemImg' src='https://cldup.com/Ef4VsmKcKQ.png'>
+    </a>
+   </div>
+   <div class="item">
+     <a class='clear' href='https://www.skyscanner.com/' target="_blank">
+       <img class='itemImg' src='https://cldup.com/0zlKuv2pSm.png'>
+     </a>
+   </div>
+  </div>
+
+</div>
+
+
+</body>

@@ -1,0 +1,113 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+    <div class=jumbotron>
+
+
+      <div class='jumboTitle'>
+        Shop Top Brands 🛍 and Travel Destinations ✈️ with Friends
+      </div>
+
+    </div>
+
+
+      <div class='centeredDiv'>
+
+
+      <div class='number-box'>
+        <div class='inner-num-box'>
+          <div class=numberIcon>
+            👇
+          </div>
+          <div class=description>
+            Create a new
+            Shopy Party
+          </div>
+        </div>
+      </div>
+      <div class='number-box'>
+        <div class='inner-num-box'>
+          <div class=numberIcon>
+            🤗
+          </div>
+          <div class=description>
+            Invite up to 7 friends
+            to your party
+          </div>
+        </div>
+      </div>
+      <div class='number-box-right'>
+        <div class='inner-num-box'>
+          <div class=numberIcon>
+            👀
+          </div>
+          <div class=description>
+            Screenshare
+            on desktop and interact
+            on mobile!
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  <div class='newRoomSection'>
+
+    <div class=centeredDiv>
+      <div class='newRoom' >
+          <%=form_for Room.new do |f|%>
+            <!-- <input type="text" id="fname" placeholder="Enter Unique Room Name"> -->
+             <%= f.text_field :name, :required => true, :placeholder => "Enter Unique Room Name"%><br />
+
+            <!-- <input type="submit" value="Create New Shopy Party 🎉" style='font-size:15px'>
+          </form> -->
+          <%= f.submit value="Create New Shopy Party 🎉"%>
+        <% end %>
+      </div>
+      <div class='titleImg'>
+        <img src='https://cldup.com/9kJ6V9PA1W.png' style=width:40vw;>
+        <p class='source'>Source: https://appear.in</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class='popularStoresTitle'>
+    Popular Stores 👇
+  </div>
+
+  <div class="masonry">
+   <div class="item">
+     <img class='itemImg' src='https://cldup.com/0EZtW2tF9j.png'>
+   </div>
+   <div class="item">
+     <img class='itemImg' src='https://cldup.com/88uWrUPFwn.png'>
+   </div>
+   <div class="item">
+     <img class='itemImg' src='https://cldup.com/Jt-PhqZaHl.png'>
+   </div>
+   <div class="item">
+     <img class='itemImg' src='https://cldup.com/q2iYJPoT9N.png'>
+   </div>
+   <div class="item">
+     <img class='itemImg' src='https://cldup.com/Ef4VsmKcKQ.png'>
+   </div>
+   <div class="item">
+     <img class='itemImg' src='https://cldup.com/0zlKuv2pSm.png'>
+   </div>
+ </div>
+
+
+
+</body>
+
+<script>
+  $(".item").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".centeredDiv").offset().top},
+          'slow');
+  });
+</script>
