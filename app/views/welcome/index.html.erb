@@ -58,12 +58,8 @@
 
     <div class=centeredDiv>
       <div class='newRoom' >
-          <%=form_for Room.new do |f|%>
-            <!-- <input type="text" id="fname" placeholder="Enter Unique Room Name"> -->
-             <%= f.text_field :name, :required => true, :placeholder => "Enter Unique Room Name"%><br />
-
-            <!-- <input type="submit" value="Create New Shopy Party 🎉" style='font-size:15px'>
-          </form> -->
+        <%=form_for Room.new do |f|%>
+          <%= f.text_field :name, :required => true, :placeholder => "Enter Unique Room Name"%><br />
           <%= f.submit value="Create New Shopy Party 🎉"%>
         <% end %>
       </div>

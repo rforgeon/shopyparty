@@ -79,5 +79,26 @@
 
 </div>
 
+<div class='centeredRoomDiv'>
+  <div class='search'>
+    <from>
+      <i class="fa fa-search" aria-hidden="true" style="color:#4f4e4e"></i>
+      <input type="textSearch" id="search" onkeyup="if (event.keyCode == 13) { search() }" placeholder="Search more stores">
+    </form>
+  </div>
+</div>
+
 
 </body>
+
+<script>
+function search() {
+    console.log('enterSearch');
+    var input
+    input = document.getElementById('search');
+    console.log(input.value)
+    url= `https://www.google.com/search?q=${input.value}`
+    var win = window.open(url, '_blank');
+    win.focus();
+}
+</script>
