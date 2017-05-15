@@ -106,4 +106,10 @@
           scrollTop: $(".centeredDiv").offset().top},
           'slow');
   });
+
+  $(".newRoom").click(function() {
+      ga('send', 'event', 'newRoom', 'create');
+  });
+
+
 </script>
